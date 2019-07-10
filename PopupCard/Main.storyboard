@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vRL-gN-bYR">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="1dv-b4-F1P">
+            <objects>
+                <viewController storyboardIdentifier="MainVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vRL-gN-bYR" customClass="MainVC" customModule="PopupCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tzk-Rc-CdA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSq-jx-Mhe">
+                                <rect key="frame" x="177" y="423" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.41554797539999999" green="0.72221610920000001" blue="0.73379731510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="VSb-3Y-KfA"/>
+                                    <constraint firstAttribute="width" secondItem="aSq-jx-Mhe" secondAttribute="height" multiplier="1:1" id="lHE-EE-gLv"/>
+                                </constraints>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelBtnPressed:" destination="vRL-gN-bYR" eventType="touchUpInside" id="GeQ-bg-ZHp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skZ-EJ-dFY">
+                                <rect key="frame" x="60" y="423" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.69019607839999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="skZ-EJ-dFY" secondAttribute="height" multiplier="1:1" id="e8d-xM-Ocf"/>
+                                    <constraint firstAttribute="width" constant="60" id="fbh-aL-eKP"/>
+                                </constraints>
+                                <state key="normal" title="Action">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionBtnPressed:" destination="vRL-gN-bYR" eventType="touchUpInside" id="zGS-Fk-LXg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIU-Kh-CzM">
+                                <rect key="frame" x="294" y="423" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.69019607839999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="2zO-qg-LGG"/>
+                                    <constraint firstAttribute="width" secondItem="lIU-Kh-CzM" secondAttribute="height" multiplier="1:1" id="AqM-P3-hV4"/>
+                                </constraints>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmBtnPressed:" destination="vRL-gN-bYR" eventType="touchUpInside" id="v0H-GL-95q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lIU-Kh-CzM" firstAttribute="width" secondItem="lIU-Kh-CzM" secondAttribute="height" multiplier="1:1" id="1Rk-gk-75C"/>
+                            <constraint firstItem="aSq-jx-Mhe" firstAttribute="centerX" secondItem="Vhz-CI-eYc" secondAttribute="centerX" id="75J-9M-6eR"/>
+                            <constraint firstItem="aSq-jx-Mhe" firstAttribute="centerY" secondItem="Vhz-CI-eYc" secondAttribute="centerY" id="Ihn-ru-NNc"/>
+                            <constraint firstItem="skZ-EJ-dFY" firstAttribute="leading" secondItem="Vhz-CI-eYc" secondAttribute="leading" constant="60" id="Jmd-hg-Ehm"/>
+                            <constraint firstItem="skZ-EJ-dFY" firstAttribute="centerY" secondItem="Vhz-CI-eYc" secondAttribute="centerY" id="MHP-vD-l72"/>
+                            <constraint firstItem="skZ-EJ-dFY" firstAttribute="width" secondItem="skZ-EJ-dFY" secondAttribute="height" multiplier="1:1" id="Q4Z-AO-C7x"/>
+                            <constraint firstItem="lIU-Kh-CzM" firstAttribute="centerY" secondItem="Vhz-CI-eYc" secondAttribute="centerY" id="dgt-V2-uyE"/>
+                            <constraint firstItem="Vhz-CI-eYc" firstAttribute="trailing" secondItem="lIU-Kh-CzM" secondAttribute="trailing" constant="60" id="sIn-Xe-VHJ"/>
+                            <constraint firstItem="lIU-Kh-CzM" firstAttribute="width" secondItem="lIU-Kh-CzM" secondAttribute="height" multiplier="1:1" id="xPA-t0-AYz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vhz-CI-eYc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Phs-OZ-xYT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-203" y="33"/>
+        </scene>
+    </scenes>
+</document>

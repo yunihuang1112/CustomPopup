@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopupVC" customModule="PopupCard" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonView" destination="YEc-a5-44k" id="n8E-vb-URF"/>
+                <outlet property="customView" destination="lwg-ip-dB7" id="hEv-BT-xDZ"/>
+                <outlet property="labelScrollView" destination="FGD-kq-IHG" id="OZw-Qi-518"/>
+                <outlet property="mainLabel" destination="sqW-gv-NXY" id="gFQ-Ps-BV3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="246"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwg-ip-dB7">
+                    <rect key="frame" x="0.0" y="0.0" width="396" height="157.5"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGD-kq-IHG">
+                            <rect key="frame" x="0.0" y="0.0" width="396" height="157.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqW-gv-NXY">
+                                    <rect key="frame" x="16" y="10" width="364" height="0.0"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" priority="250" constant="20.5" id="Bea-M9-1kn"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="sqW-gv-NXY" firstAttribute="leading" secondItem="FGD-kq-IHG" secondAttribute="leading" constant="16" id="52T-8s-W5a"/>
+                                <constraint firstAttribute="trailing" secondItem="sqW-gv-NXY" secondAttribute="trailing" constant="16" id="CgI-RL-95k"/>
+                                <constraint firstItem="sqW-gv-NXY" firstAttribute="top" secondItem="FGD-kq-IHG" secondAttribute="top" constant="10" id="X3o-eF-di0"/>
+                                <constraint firstAttribute="bottom" secondItem="sqW-gv-NXY" secondAttribute="bottom" constant="10" id="ZO4-aY-SVf"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="FGD-kq-IHG" secondAttribute="trailing" id="9Qf-0c-0Jz"/>
+                        <constraint firstAttribute="bottom" secondItem="FGD-kq-IHG" secondAttribute="bottom" id="RwA-FB-kES"/>
+                        <constraint firstItem="FGD-kq-IHG" firstAttribute="width" secondItem="lwg-ip-dB7" secondAttribute="width" id="Ytw-bQ-MwR"/>
+                        <constraint firstItem="FGD-kq-IHG" firstAttribute="top" secondItem="lwg-ip-dB7" secondAttribute="top" id="aJa-Li-Dvb"/>
+                        <constraint firstAttribute="height" secondItem="FGD-kq-IHG" secondAttribute="height" priority="250" id="kuX-xl-I9g"/>
+                        <constraint firstItem="FGD-kq-IHG" firstAttribute="leading" secondItem="lwg-ip-dB7" secondAttribute="leading" id="ky6-Fr-6I8"/>
+                        <constraint firstAttribute="trailing" secondItem="sqW-gv-NXY" secondAttribute="trailing" constant="16" id="nbo-CC-cEe"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEc-a5-44k">
+                    <rect key="frame" x="0.0" y="157.5" width="396" height="88.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="250" constant="88.5" id="LQN-KL-qaD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lwg-ip-dB7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BTV-Q4-Q9X"/>
+                <constraint firstAttribute="bottom" secondItem="YEc-a5-44k" secondAttribute="bottom" id="EAq-EV-Zb1"/>
+                <constraint firstAttribute="trailing" secondItem="lwg-ip-dB7" secondAttribute="trailing" id="OSO-NK-xVg"/>
+                <constraint firstItem="lwg-ip-dB7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SDn-aI-rsc"/>
+                <constraint firstItem="YEc-a5-44k" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="V32-Qw-ZcP"/>
+                <constraint firstItem="YEc-a5-44k" firstAttribute="top" secondItem="lwg-ip-dB7" secondAttribute="bottom" id="fUE-QD-Z5A"/>
+                <constraint firstItem="lwg-ip-dB7" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="ilz-dA-Rx9"/>
+                <constraint firstAttribute="trailing" secondItem="YEc-a5-44k" secondAttribute="trailing" id="m4c-zy-fgh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="180.80000000000001" y="140.32983508245877"/>
+        </view>
+    </objects>
+</document>

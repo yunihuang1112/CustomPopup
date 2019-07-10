@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="PopupCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khq-Tj-0bh">
+                                <rect key="frame" x="157.5" y="313.5" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.5" green="0.87885199650000001" blue="0.85104709199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="cZi-aD-J07"/>
+                                    <constraint firstAttribute="width" secondItem="khq-Tj-0bh" secondAttribute="height" multiplier="1:1" id="u9M-m8-Dpu"/>
+                                </constraints>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zmS-gb-PEM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Avc-jM-i7P">
+                                <rect key="frame" x="52" y="313.5" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.38169679015904578" green="0.89325521225716242" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="2g7-UA-mbP"/>
+                                    <constraint firstAttribute="width" secondItem="Avc-jM-i7P" secondAttribute="height" multiplier="1:1" id="Bb6-DX-WLr"/>
+                                </constraints>
+                                <state key="normal" title="Action"/>
+                                <connections>
+                                    <action selector="actionBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gnV-bP-u3A"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Avc-jM-i7P" firstAttribute="width" secondItem="Avc-jM-i7P" secondAttribute="height" multiplier="1:1" id="21g-a0-9u9"/>
+                            <constraint firstItem="khq-Tj-0bh" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="6LQ-4W-R1Y"/>
+                            <constraint firstItem="Avc-jM-i7P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="ON4-Ce-XRW"/>
+                            <constraint firstItem="Avc-jM-i7P" firstAttribute="centerY" secondItem="khq-Tj-0bh" secondAttribute="centerY" id="mGo-zT-b1V"/>
+                            <constraint firstItem="khq-Tj-0bh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="q3P-Zo-rVP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
